@@ -19,7 +19,18 @@ app.use(function (req, res, next) {
 });
 
 app.get('/api/comments', function(req, res) {
-  fs.readFile(COMMENTS_FILE, function(err, res) {
+  fs.readFile(COMMENTS_FILE, function(err, data) {
+    if(err) {
+      console.log(err);
+      process.exit(1);
+    }
+    
+    res.json(JSON.parse(data));
+  });
+});
+
+app.post('/api/comments', function(req, res) {
+  fs.readFile(COMMENTS_FILE, function(err, data) {
     if(err) {
       console.error(err);
       process.exit(1);
@@ -39,6 +50,8 @@ app.get('/api/comments', function(req, res) {
         console.error(err);
         process.exit(1);
       }
+      
+      res.json(JSON.parse(comments));
     });
   });
 });
