@@ -51,7 +51,7 @@ app.post('/api/comments', function(req, res) {
         process.exit(1);
       }
       
-      res.json(JSON.parse(comments));
+      res.json(comments);
     });
   });
 });
