@@ -1,4 +1,8 @@
-'use script';
+import React from 'react';
+import Hello from './component.js';
 
-var component = require('./component');
-document.body.appendChild(component());
+main();
+
+function main() {
+  React.render(<Hello />, document.getElementById('app'));
+}

@@ -42,23 +42,15 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use script';
-
-	var component = __webpack_require__(1);
-	document.body.appendChild(component());
-
-/***/ },
-/* 1 */
 /***/ function(module, exports) {
 
-	'use script'
+	import React from 'react';
+	import Hello from './component.js';
 
-	module.exports = function() {
-	  var element = document.createElement('h1');
-	  element.innerHTML = 'Hello World!';
-	  return element;
+	main();
+
+	function main() {
+	  React.render(React.createElement(Hello, null), document.getElementById('app'));
 	}
 
 /***/ }
