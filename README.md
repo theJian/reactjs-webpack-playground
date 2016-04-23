@@ -7,3 +7,4 @@
 - [webpack how to](https://github.com/petehunt/webpack-howto)
 - [React 入门教程](https://hulufei.gitbooks.io/react-tutorial)
 - [React-webpack-cookbook](https://github.com/fakefish/react-webpack-cookbook)
+- [React Js Tutorials (Youtube play list)](https://www.youtube.com/playlist?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b)
