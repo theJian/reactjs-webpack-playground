@@ -46,6 +46,7 @@
 
 	import React from 'react';
 	import Hello from './component.js';
+	import './main.css';
 
 	main();
 
